@@ -3,8 +3,8 @@
 * **advanced.ipynb**- Included callback and other complex functionalities on keras framework alongwith some of the famous architectures (LeNet, AlexNet)
 * **MobileNet.ipynb**- Learning MobileNet Architecture on keras framework
 * **Inception_v3.ipynb**- Implementing Inception V3 Architecture using keras framework
-<br>
-# References-
+
+# References
 word2vec-
 1. https://adventuresinmachinelearning.com/word2vec-keras-tutorial/
 
