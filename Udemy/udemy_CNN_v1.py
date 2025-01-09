@@ -68,7 +68,7 @@ classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics=['a
 # augmentation will create various batches of images & will apply various transformations on images like flipping
 # hence providing the overall more training data without adding anymore images
 
-from keras.preprocessing.image import ImageDataGenerator
+from keras.src.legacy.preprocessing.image import ImageDataGenerator
 
 # shear_range & zoom_range are to define how much randomization we want to apply on data
 train_datagen = ImageDataGenerator(rescale = 1./255,
@@ -91,7 +91,7 @@ test_set = test_datagen.flow_from_directory('dataset/test_set',
                                             class_mode = 'binary')
 
 # steps_per_epoch: number of images in training set 
-history = classifier.fit_generator(training_set,
+history = classifier.fit(training_set,
                          steps_per_epoch = 8000,
                          epochs = 25,
                          validation_data = test_set,
